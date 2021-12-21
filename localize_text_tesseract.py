@@ -69,7 +69,7 @@ def ocr_cccd(image):
             print("")
             cv2.rectangle(image1, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-            fontpath = r"C:\Users\Admin\PycharmProjects\ORC\BeVietnam-Medium.ttf"
+            fontpath = "./BeVietnam-Medium.ttf"
             font = ImageFont.truetype(fontpath, 18)
             image1 = Image.fromarray(image1)
             draw = ImageDraw.Draw(image1)
